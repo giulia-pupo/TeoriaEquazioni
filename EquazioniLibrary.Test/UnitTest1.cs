@@ -7,7 +7,7 @@ namespace EquazioniLibrary.Test
     public class UnitTest1
     {
         [TestMethod]
-        public static void Determinata()
+        public void Determinata()
         {
             double a = 5;
             bool valore_aspettato = true;
@@ -15,7 +15,7 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(valore_aspettato, resp);
         }
         [TestMethod]
-        public static void Impossibile()
+        public void Impossibile()
         {
             double a = 8;
             double b = 10;
@@ -24,7 +24,7 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(valore_aspettato, resp);
         }
         [TestMethod]
-        public static void EqDiSecondoGrado()
+        public  void EqDiSecondoGrado()
         {
             double a = 0;
             bool valore_aspettato = false;
@@ -32,7 +32,7 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(valore_aspettato, resp);
         }
         [TestMethod]
-        public static void CalcoloDelta()
+        public  void CalcoloDelta()
         {
             double a = 5;
             double b = 2;
@@ -41,7 +41,8 @@ namespace EquazioniLibrary.Test
             double resp = Equazioni.IsDegree2(a, b, c);
             Assert.AreEqual(valore_aspettato, resp);
         }
-        public static void CalcoloDelta2()
+        [TestMethod]
+        public void CalcoloDelta2()
         {
             double a = 4;
             double b = -4;
@@ -51,7 +52,7 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(valore_aspettato, resp);
         }
         [TestMethod]
-        public static void CalcolaEquazione2Grado()
+        public void CalcolaEquazione2Grado()
         {
             double a = 1;
             double b = -7;
@@ -62,7 +63,7 @@ namespace EquazioniLibrary.Test
             Assert.AreEqual(valore_aspettato1, valore_aspettato2, resp);
         }
         [TestMethod]
-        public static void Equazione1Grado()
+        public void Equazione1Grado()
         {
             double a = 2;
             double b = -6;
