@@ -39,5 +39,46 @@ namespace EquazioniLibrary
             double delta = b * b - 4 * a * c;
             return delta;
         }
+        public static string CalcoloEquazione (double a, double b, double c)
+        {
+            string risposta = "";
+            double delta = b * b - 4 * a * c;
+            if (delta > 0)
+            {
+                double x1 = (-b + Math.Sqrt(delta)) / 2 * a;
+                double x2 = (-b + Math.Sqrt(delta)) / 2 * a;
+                risposta = $"I risultati dell'equazione sono {x1} e {x2}";
+            }
+            else if (delta == 0)
+            {
+                double x1 = (-b + Math.Sqrt(delta)) / 2 * a;
+                double x2 = (-b + Math.Sqrt(delta)) / 2 * a;
+                risposta = $"I risultati dell'equazione sono {x1} e {x2}";
+            }
+            else if (delta < 0)
+            {
+                risposta = "L'equazione è impossibile";
+            }
+            return risposta;
+        }
+        public static string EquationDegree1(double a, double b)
+        {
+            string risposta = "";
+            if (a == 0 || b == 0)
+            {
+                risposta = "L'equazione è indeterminata";
+            }
+            else if (a != 0 || b == 0)
+            {
+                risposta = "L'equazione è impossibile";
+            }
+            else
+            {
+                double x = -b / a;
+                risposta = $"Il risultato dell'equazione è {x}";
+            }
+            return risposta;
+        }
+    }
     }
 }
