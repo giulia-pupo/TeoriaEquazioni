@@ -19,7 +19,7 @@ namespace EquazioniLibrary.Test
         {
             double a = 8;
             double b = 10;
-            bool valore_aspettato = true;
+            bool valore_aspettato = false;
             bool resp = Equazioni.IsInconsisted(a, b);
             Assert.AreEqual(valore_aspettato, resp);
         }
@@ -57,17 +57,16 @@ namespace EquazioniLibrary.Test
             double a = 1;
             double b = -7;
             double c = 10;
-            double valore_aspettato1 = 2;
-            double valore_aspettato2 = 5;
+            string valore_aspettato = $"I risultati dell'equazione sono {5} e {2}";
             string resp = Equazioni.CalcoloEquazione(a, b, c);
-            Assert.AreEqual(valore_aspettato1, valore_aspettato2, resp);
+            Assert.AreEqual(valore_aspettato, resp);
         }
         [TestMethod]
         public void Equazione1Grado()
         {
             double a = 2;
             double b = -6;
-            double valore_aspettato = 3;
+            string valore_aspettato = $"Il risultato dell'equazione è {3}";
             string resp = Equazioni.EquationDegree1(a, b);
             Assert.AreEqual(valore_aspettato, resp);
         }

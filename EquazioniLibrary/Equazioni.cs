@@ -46,13 +46,13 @@ namespace EquazioniLibrary
             if (delta > 0)
             {
                 double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
-                double x2 = (-b + Math.Sqrt(delta)) / (2 * a);
+                double x2 = (-b - Math.Sqrt(delta)) / (2 * a);
                 risposta = $"I risultati dell'equazione sono {x1} e {x2}";
             }
             else if (delta == 0)
             {
                 double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
-                double x2 = (-b + Math.Sqrt(delta)) / (2 * a);
+                double x2 = (-b - Math.Sqrt(delta)) / (2 * a);
                 risposta = $"I risultati dell'equazione sono {x1} e {x2}";
             }
             else if (delta < 0)
@@ -64,11 +64,11 @@ namespace EquazioniLibrary
         public static string EquationDegree1(double a, double b)
         {
             string risposta = "";
-            if (a == 0 || b == 0)
+            if (a == 0 && b == 0)
             {
                 risposta = "L'equazione è indeterminata";
             }
-            else if (a != 0 || b == 0)
+            else if (a != 0 && b == 0)
             {
                 risposta = "L'equazione è impossibile";
             }
