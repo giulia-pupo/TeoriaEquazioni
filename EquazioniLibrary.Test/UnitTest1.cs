@@ -38,7 +38,7 @@ namespace EquazioniLibrary.Test
             double b = 2;
             double c = 1;
             double valore_aspettato = -16;
-            double resp = Equazioni.IsDegree2(a, b, c);
+            double resp = Equazioni.Delta(a, b, c);
             Assert.AreEqual(valore_aspettato, resp);
         }
         [TestMethod]
@@ -48,7 +48,7 @@ namespace EquazioniLibrary.Test
             double b = -4;
             double c = 1;
             double valore_aspettato = 0;
-            double resp = Equazioni.IsDegree2(a, b, c);
+            double resp = Equazioni.Delta(a, b, c);
             Assert.AreEqual(valore_aspettato, resp);
         }
         [TestMethod]

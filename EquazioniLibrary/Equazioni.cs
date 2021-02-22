@@ -34,7 +34,7 @@ namespace EquazioniLibrary
             }
             return n;
         }
-        public static double IsDegree2(double a, double b, double c)
+        public static double Delta(double a, double b, double c)
         {
             double delta = (b * b) - (4 * a * c);
             return delta;
@@ -42,7 +42,7 @@ namespace EquazioniLibrary
         public static string CalcoloEquazione (double a, double b, double c)
         {
             string risposta = "";
-            double delta = (b * b) - (4 * a * c);
+            double delta = Delta(a, b, c);
             if (delta > 0)
             {
                 double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
@@ -68,7 +68,7 @@ namespace EquazioniLibrary
             {
                 risposta = "L'equazione è indeterminata";
             }
-            else if (a != 0 && b == 0)
+            else if (a == 0 && b != 0)
             {
                 risposta = "L'equazione è impossibile";
             }
