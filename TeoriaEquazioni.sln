@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EquazioniLibrary", "Equazio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EquazioniLibrary.Test", "EquazioniLibrary.Test\EquazioniLibrary.Test.csproj", "{2EAD41D0-618C-4A27-8610-F70A00AEBC3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RisoluzioniEquazioni", "RisoluzioniEquazioni\RisoluzioniEquazioni.csproj", "{8480E207-B115-42B8-8763-C04EE8CAAAC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2EAD41D0-618C-4A27-8610-F70A00AEBC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EAD41D0-618C-4A27-8610-F70A00AEBC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EAD41D0-618C-4A27-8610-F70A00AEBC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8480E207-B115-42B8-8763-C04EE8CAAAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8480E207-B115-42B8-8763-C04EE8CAAAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8480E207-B115-42B8-8763-C04EE8CAAAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8480E207-B115-42B8-8763-C04EE8CAAAC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
