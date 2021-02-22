@@ -36,23 +36,23 @@ namespace EquazioniLibrary
         }
         public static double IsDegree2(double a, double b, double c)
         {
-            double delta = b * b - 4 * a * c;
+            double delta = (b * b) - (4 * a * c);
             return delta;
         }
         public static string CalcoloEquazione (double a, double b, double c)
         {
             string risposta = "";
-            double delta = b * b - 4 * a * c;
+            double delta = (b * b) - (4 * a * c);
             if (delta > 0)
             {
-                double x1 = (-b + Math.Sqrt(delta)) / 2 * a;
-                double x2 = (-b + Math.Sqrt(delta)) / 2 * a;
+                double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+                double x2 = (-b + Math.Sqrt(delta)) / (2 * a);
                 risposta = $"I risultati dell'equazione sono {x1} e {x2}";
             }
             else if (delta == 0)
             {
-                double x1 = (-b + Math.Sqrt(delta)) / 2 * a;
-                double x2 = (-b + Math.Sqrt(delta)) / 2 * a;
+                double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+                double x2 = (-b + Math.Sqrt(delta)) / (2 * a);
                 risposta = $"I risultati dell'equazione sono {x1} e {x2}";
             }
             else if (delta < 0)
