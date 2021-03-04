@@ -68,7 +68,7 @@ namespace EquazioniLibrary
             {
                 risposta = "L'equazione è indeterminata";
             }
-            else if (a == 0 && b != 0)
+            else if (IsInconsisted(a, b))
             {
                 risposta = "L'equazione è impossibile";
             }
