@@ -79,5 +79,22 @@ namespace EquazioniLibrary
             }
             return risposta;
         }
+        public static string SolutionDegree1(double a, double b)
+        {
+            string risposta = "";
+            if (a == 0 && b == 0)
+            {
+                risposta = "L'equazione è indeterminata";
+            }
+            else if (IsInconsisted(a, b))
+            {
+                risposta = "L'equazione è impossibile";
+            }
+            else
+            {
+                risposta = "L'equazione è indeterminata";
+            }
+            return risposta;
+        }
     }
  }

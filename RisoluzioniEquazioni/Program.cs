@@ -13,20 +13,8 @@ namespace RisoluzioniEquazioni
             Console.Write("b = ");
             int b = Convert.ToInt32(Console.ReadLine());
 
-            if (Equazioni.IsDetermined(ax) == true)
-            {
-                Console.WriteLine("L'equazione è DETERMINATA");
-            }
-            else if (Equazioni.IsInconsisted(ax, b) == true)
-            {
-                Console.WriteLine("L'equazione è IMPOSSIBILE");
-            }
-            else
-            {
-                Console.WriteLine("L'equazione è INDETERMINATA");
-            }
-
-            Equazioni.EquationDegree1(ax, b);
+            Console.WriteLine(Equazioni.EquationDegree1(ax, b)); 
+            Console.WriteLine(Equazioni.SolutionDegree1(ax, b)); 
 
             Console.WriteLine();
 

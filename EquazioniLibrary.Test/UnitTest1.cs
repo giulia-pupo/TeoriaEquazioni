@@ -10,18 +10,20 @@ namespace EquazioniLibrary.Test
         public void Determinata()
         {
             double a = 5;
-            bool valore_aspettato = true;
+            //bool valore_aspettato = true;
             bool resp = Equazioni.IsDetermined(a);
-            Assert.AreEqual(valore_aspettato, resp);
+            //Assert.AreEqual(valore_aspettato, resp);
+            Assert.IsTrue(resp);
         }
         [TestMethod]
         public void Impossibile()
         {
             double a = 8;
             double b = 10;
-            bool valore_aspettato = false;
+            //bool valore_aspettato = false;
             bool resp = Equazioni.IsInconsisted(a, b);
-            Assert.AreEqual(valore_aspettato, resp);
+            //Assert.AreEqual(valore_aspettato, resp);
+            Assert.IsFalse(resp);
         }
         [TestMethod]
         public  void EqDiSecondoGrado()
